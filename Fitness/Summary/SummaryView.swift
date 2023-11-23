@@ -75,6 +75,9 @@ struct SummaryView2: View {
                                         .clipShape(Circle())
                                         .frame(width: 50, height: 50)
                                         .padding(.leading, 140)
+                                        .accessibility(label: Text("Account Settings"))
+                                        .accessibility(addTraits: .isButton)
+
                                 }
                             }
                         }.padding(.horizontal)
@@ -153,6 +156,8 @@ struct SummaryView2: View {
                                                     
                                                 }
                                             }
+                                            .accessibility(label: Text("Moving: \(progreso*100 , specifier: "%.2f") percent"))
+
                                     }.padding(.trailing, -45)
                                         
                                         
@@ -183,6 +188,7 @@ struct SummaryView2: View {
                                         .frame(width: 70, height: 70)
                                         .padding(.leading, 3)
                                         .padding(.bottom, 32)
+                                        .accessibility(label: Text("Trainer Icon"))
                                 }
                                 VStack(alignment: .leading) {
                                     Text("A motivation tip to help you run or walk for longer")
@@ -222,6 +228,7 @@ struct SummaryView2: View {
                                 .foregroundColor(Color.white)
                                 .padding()
                                 .padding(.bottom, -25)
+                                .accessibility(label: Text("Trends"))
                             
                             VStack {
                                 VStack(alignment: .leading) {
@@ -239,6 +246,7 @@ struct SummaryView2: View {
                                         .font(Font.system(size: 17))
                                         .foregroundColor(Color.barGreen)
                                         .padding(.top, -3)
+                                        .accessibility(addTraits: .isButton)
                                     
                                 }.padding()
                             }.background(
@@ -246,7 +254,8 @@ struct SummaryView2: View {
                                     .fill(Color.grayRectangle)
                             )
                             .padding()
-                        }
+                            
+                        }.accessibility(label: Text("Closing your rings every day is a great way to stay active. Trend arrows help you stay motivated by showing even more details. Get Started"))
                         
                         // Awards
                         VStack(alignment: .leading) {
@@ -256,6 +265,7 @@ struct SummaryView2: View {
                                 .foregroundColor(Color.white)
                                 .padding()
                                 .padding(.bottom, -25)
+                                .accessibility(label: Text("Awards"))
                             
                             VStack {
                                 HStack(spacing: 0) {
@@ -279,7 +289,7 @@ struct SummaryView2: View {
                                             .padding(.top, -40)
                                         
                                         Spacer()
-                                    }
+                                    }.accessibility(label: Text("November Challenge. 9 of 4 days."))
                                     
                                     VStack {
                                         Image("patito")
@@ -301,7 +311,7 @@ struct SummaryView2: View {
                                             .padding(.top, -40)
                                         
                                         Spacer()
-                                    }
+                                    }.accessibility(label: Text("New Move Record. 223 kilocalories"))
                                     
                                     VStack {
                                         Image("patos")
@@ -324,8 +334,7 @@ struct SummaryView2: View {
                                         
                                         Spacer()
                                         
-                                        // Giulia Cegghetini
-                                    }
+                                    }.accessibility(label: Text("New Move Goal. 150 kilocalories"))
                                 }
                                 
                             }.background(

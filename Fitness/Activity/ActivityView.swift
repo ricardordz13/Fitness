@@ -38,7 +38,8 @@ struct ActivityView: View {
                         // Ring
                             CircleView(progress: progress, progreso: progreso, size: 0.70, isArrow: true, circleSize: 50)
                             .padding(.bottom, -18)
-        
+                            .accessibility(label: Text("Moving: \(progreso*100 , specifier: "%.2f") percent"))
+
                         // Charts
                         GraphView(
                             progress: healthStore.caloriesBurnedToday,

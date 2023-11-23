@@ -37,6 +37,8 @@ struct NavBarView: View {
                             CircleView(progress: 0, progreso: CGFloat(steps) / CGFloat(3500), size: 0.1, isArrow: false, circleSize: 10)
                                 .frame(width: 45, height: 50)
                                 .aspectRatio(contentMode: .fit)
+                                .accessibility(label: Text("Moving: \((CGFloat(steps) / CGFloat(3500))*100, specifier: "%.2f") percent"))
+
                         }
                     }
                 }
