@@ -23,9 +23,10 @@ struct GraphView: View {
             VStack(alignment: .leading) {
                 VStack(alignment: .leading) {
                     Text("Move")
-                        .font(Font.system(size: 18, weight: .regular))
-                        .kerning(0.5)
+                        .font(Font.system(size: 16, weight: .regular))
+                        .kerning(0.05)
                         .foregroundColor(Color.white)
+                        .padding(.bottom, 4)
                     (
                         Text("\(progress)/\(goal)")
                             .font(Font.system(size: 28, weight: .semibold, design: .rounded))
@@ -170,7 +171,7 @@ struct BarChart: View {
 
 #Preview {
     GraphView(
-        progress: 48,
+        progress: 76,
         goal: 150,
         data: ActivityData.moveChartData,
         total: 767,

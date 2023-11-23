@@ -27,11 +27,17 @@ struct Arrow: View {
 }
 
 struct CircleView: View {
-    var progress: CGFloat
+    @State private var viewID = UUID() // Use a UUID as an identifier
+
+    @State public var progress: CGFloat
+    var progreso: CGFloat
+    
+    var size: CGFloat
+    var isArrow: Bool
     
     // For close the circle and arrows
-    private var fullCircle: CGFloat { return 300 * -0.82 / 2 }
-    private let circleSize: CGFloat = 60.0
+    public var fullCircle: CGFloat { return 300 * -size / 2 }
+    var circleSize: CGFloat = 10.0
         
     private var color: [Color] {
         get {
@@ -41,67 +47,77 @@ struct CircleView: View {
     }
     
     var body: some View {
-        ZStack {
-            if self.progress < 0.98 {
-                // Background Circle (what has not been completed)
-                Circle()
-                    .scale(0.82)
-                    .stroke(self.color[1], lineWidth: self.circleSize)
+        VStack {
+            ZStack {
+                if progress < 0.98 {
+                    // Background Circle (what has not been completed)
+                    Circle()
+                        .scale(size)
+                        .stroke(color[1], lineWidth: circleSize)
+                    
+                    // Activity (what has been completed)
+                    Circle()
+                        .scale(size)
+                        .trim(from: 0, to: progress)
+                        .stroke(
+                            AngularGradient(
+                                gradient: Gradient(colors: [color[0]]),
+                                center: .center,
+                                startAngle: .degrees(0.0),
+                                endAngle: .init(degrees: 360.0)
+                            ),
+                            style: StrokeStyle(lineWidth: circleSize, lineCap: .round))
+                        .rotationEffect(.degrees(-90.0))
+                    
+                    // For the overlapping
+                    Circle()
+                        .frame(width: circleSize, height: circleSize)
+                        .foregroundColor(color[0])
+                        .offset(y: -150 * size)
+                    
+                } else {
+                    // Activity (what has been completed)
+                    Circle()
+                        .scale(size)
+                        .stroke(
+                            AngularGradient(
+                                gradient: Gradient(colors: [color[0]]),
+                                center: .center,
+                                startAngle: .degrees(0.0),
+                                endAngle: .init(degrees: 360.0)
+                            ),
+                            style: StrokeStyle(lineWidth: circleSize, lineCap: .round))
+                        .rotationEffect(.degrees((360 * Double(progress)) - 90))
+                    
+                    // Let the circle overlap
+                    Circle()
+                        .frame(width: circleSize, height: circleSize)
+                        .offset(y: -150 * size)
+                        .foregroundColor(color[0])
+                        .shadow(color: Color.black.opacity(0.2), radius: 5, x: circleSize / 4, y: 0)
+                        .rotationEffect(.degrees(360 * Double(progress)))
+                }
                 
-                // Activity (what has been completed)
-                Circle()
-                    .scale(0.82)
-                    .trim(from: 0, to: self.progress)
-                    .stroke(
-                        AngularGradient(
-                            gradient: Gradient(colors: [self.color[0]]),
-                            center: .center,
-                            startAngle: .degrees(0.0),
-                            endAngle: .init(degrees: 360.0)
-                        ),
-                        style: StrokeStyle(lineWidth: self.circleSize, lineCap: .round))
-                    .rotationEffect(.degrees(-90.0))
-                
-                // For the overlapping
-                Circle()
-                    .frame(width: self.circleSize, height: self.circleSize)
-                    .foregroundColor(self.color[0])
-                    .offset(y: self.fullCircle)
-                
-            } else {
-                // Activity (what has been completed)
-                Circle()
-                    .scale(0.82)
-                    .stroke(
-                        AngularGradient(
-                            gradient: Gradient(colors: [self.color[0]]),
-                            center: .center,
-                            startAngle: .degrees(0.0),
-                            endAngle: .init(degrees: 360.0)
-                        ),
-                        style: StrokeStyle(lineWidth: self.circleSize, lineCap: .round))
-                    .rotationEffect(.degrees((360 * Double(self.progress)) - 90))
-                
-                // Let the circle overlap
-                Circle()
-                    .frame(width: self.circleSize, height: self.circleSize)
-                    .offset(y: self.fullCircle)
-                    .foregroundColor(self.color[0])
-                    .shadow(color: Color.black.opacity(0.2), radius: 5, x: self.circleSize / 4, y: 0)
-                    .rotationEffect(.degrees(360 * Double(self.progress)))
+                // Arrow
+                if isArrow {
+                    Arrow()
+                        .foregroundColor(.black)
+                        .frame(width: 25, height: 40)
+                        .rotationEffect(.degrees(0))
+                        .offset(y: -150 * size)
+                }
             }
-            
-            // Arrow
-            Arrow()
-                .foregroundColor(.black)
-                .frame(width: 40, height: 40)
-                .rotationEffect(.degrees(0))
-                .offset(x: 5, y: self.fullCircle)
+            .frame(width: 300, height: 300)
+            .onAppear {
+                withAnimation(.easeInOut(duration: 1)) {
+                    // Adjust this value to control the initial animation
+                    self.progress = progreso
+                }
+            }
         }
-        .frame(width: 300, height: 300)
     }
 }
- 
+
 #Preview {
-    CircleView(progress: 1.5)
+    CircleView(progress: 0, progreso: 0.8, size: 0.70, isArrow: true, circleSize: 60)
 }

@@ -14,6 +14,19 @@
 		D93B1ABB2B038F0F0068BE93 /* FitnessTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D93B1ABA2B038F0F0068BE93 /* FitnessTests.swift */; };
 		D93B1AC52B038F0F0068BE93 /* FitnessUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D93B1AC42B038F0F0068BE93 /* FitnessUITests.swift */; };
 		D93B1AC72B038F0F0068BE93 /* FitnessUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D93B1AC62B038F0F0068BE93 /* FitnessUITestsLaunchTests.swift */; };
+		D93B1AD42B03CB630068BE93 /* SummaryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D93B1AD32B03CB630068BE93 /* SummaryView.swift */; };
+		D93B1AD62B04BEE80068BE93 /* ActivityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D93B1AD52B04BEE80068BE93 /* ActivityView.swift */; };
+		D93B1AD82B04C9070068BE93 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D93B1AD72B04C9070068BE93 /* Extensions.swift */; };
+		D94775032B0613F0002F1E37 /* CircleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D94775022B0613F0002F1E37 /* CircleView.swift */; };
+		D94775092B06336A002F1E37 /* GraphView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D94775082B06336A002F1E37 /* GraphView.swift */; };
+		D947750B2B06D281002F1E37 /* ActivityViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D947750A2B06D281002F1E37 /* ActivityViewModel.swift */; };
+		D94775102B07B069002F1E37 /* FooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D947750F2B07B069002F1E37 /* FooterView.swift */; };
+		D94775132B08E8D4002F1E37 /* SwiftUICharts in Frameworks */ = {isa = PBXBuildFile; productRef = D94775122B08E8D4002F1E37 /* SwiftUICharts */; };
+		D94775152B08E982002F1E37 /* NavBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D94775142B08E982002F1E37 /* NavBarView.swift */; };
+		D947751E2B0C1659002F1E37 /* GifView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D947751D2B0C1659002F1E37 /* GifView.swift */; };
+		D94775262B0C1D0B002F1E37 /* walking2.gif in Resources */ = {isa = PBXBuildFile; fileRef = D94775252B0C1D0B002F1E37 /* walking2.gif */; };
+		D9A34F372B0D079A0004B5EE /* Step.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9A34F362B0D079A0004B5EE /* Step.swift */; };
+		D9F6D5512B0CF98500E06871 /* HealthStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9F6D5502B0CF98500E06871 /* HealthStore.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +57,19 @@
 		D93B1AC02B038F0F0068BE93 /* FitnessUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FitnessUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D93B1AC42B038F0F0068BE93 /* FitnessUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FitnessUITests.swift; sourceTree = "<group>"; };
 		D93B1AC62B038F0F0068BE93 /* FitnessUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FitnessUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		D93B1AD32B03CB630068BE93 /* SummaryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SummaryView.swift; sourceTree = "<group>"; };
+		D93B1AD52B04BEE80068BE93 /* ActivityView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityView.swift; sourceTree = "<group>"; };
+		D93B1AD72B04C9070068BE93 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		D94775022B0613F0002F1E37 /* CircleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleView.swift; sourceTree = "<group>"; };
+		D94775082B06336A002F1E37 /* GraphView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraphView.swift; sourceTree = "<group>"; };
+		D947750A2B06D281002F1E37 /* ActivityViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityViewModel.swift; sourceTree = "<group>"; };
+		D947750F2B07B069002F1E37 /* FooterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FooterView.swift; sourceTree = "<group>"; };
+		D94775142B08E982002F1E37 /* NavBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavBarView.swift; sourceTree = "<group>"; };
+		D947751D2B0C1659002F1E37 /* GifView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GifView.swift; sourceTree = "<group>"; };
+		D94775252B0C1D0B002F1E37 /* walking2.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = walking2.gif; path = ../../../../Downloads/walking2.gif; sourceTree = "<group>"; };
+		D9A34F342B0CFD160004B5EE /* Fitness.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Fitness.entitlements; sourceTree = "<group>"; };
+		D9A34F362B0D079A0004B5EE /* Step.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Step.swift; sourceTree = "<group>"; };
+		D9F6D5502B0CF98500E06871 /* HealthStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthStore.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +77,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D94775132B08E8D4002F1E37 /* SwiftUICharts in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -94,8 +121,15 @@
 		D93B1AA82B038F0D0068BE93 /* Fitness */ = {
 			isa = PBXGroup;
 			children = (
+				D9A34F342B0CFD160004B5EE /* Fitness.entitlements */,
 				D93B1AA92B038F0D0068BE93 /* FitnessApp.swift */,
 				D93B1AAB2B038F0D0068BE93 /* ContentView.swift */,
+				D9A34F352B0D07850004B5EE /* Models */,
+				D9F6D54F2B0CF97200E06871 /* Store */,
+				D947751A2B0B58CC002F1E37 /* Summary */,
+				D947750E2B0792CE002F1E37 /* Activity */,
+				D947750A2B06D281002F1E37 /* ActivityViewModel.swift */,
+				D93B1AD72B04C9070068BE93 /* Extensions.swift */,
 				D93B1AAD2B038F0F0068BE93 /* Assets.xcassets */,
 				D93B1AAF2B038F0F0068BE93 /* Preview Content */,
 			);
@@ -127,6 +161,44 @@
 			path = FitnessUITests;
 			sourceTree = "<group>";
 		};
+		D947750E2B0792CE002F1E37 /* Activity */ = {
+			isa = PBXGroup;
+			children = (
+				D93B1AD52B04BEE80068BE93 /* ActivityView.swift */,
+				D94775022B0613F0002F1E37 /* CircleView.swift */,
+				D94775082B06336A002F1E37 /* GraphView.swift */,
+				D947750F2B07B069002F1E37 /* FooterView.swift */,
+				D94775142B08E982002F1E37 /* NavBarView.swift */,
+			);
+			path = Activity;
+			sourceTree = "<group>";
+		};
+		D947751A2B0B58CC002F1E37 /* Summary */ = {
+			isa = PBXGroup;
+			children = (
+				D93B1AD32B03CB630068BE93 /* SummaryView.swift */,
+				D947751D2B0C1659002F1E37 /* GifView.swift */,
+				D94775252B0C1D0B002F1E37 /* walking2.gif */,
+			);
+			path = Summary;
+			sourceTree = "<group>";
+		};
+		D9A34F352B0D07850004B5EE /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				D9A34F362B0D079A0004B5EE /* Step.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		D9F6D54F2B0CF97200E06871 /* Store */ = {
+			isa = PBXGroup;
+			children = (
+				D9F6D5502B0CF98500E06871 /* HealthStore.swift */,
+			);
+			path = Store;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -143,6 +215,9 @@
 			dependencies = (
 			);
 			name = Fitness;
+			packageProductDependencies = (
+				D94775122B08E8D4002F1E37 /* SwiftUICharts */,
+			);
 			productName = Fitness;
 			productReference = D93B1AA62B038F0D0068BE93 /* Fitness.app */;
 			productType = "com.apple.product-type.application";
@@ -215,6 +290,9 @@
 				Base,
 			);
 			mainGroup = D93B1A9D2B038F0D0068BE93;
+			packageReferences = (
+				D94775112B08E8D4002F1E37 /* XCRemoteSwiftPackageReference "chartview" */,
+			);
 			productRefGroup = D93B1AA72B038F0D0068BE93 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -233,6 +311,7 @@
 			files = (
 				D93B1AB12B038F0F0068BE93 /* Preview Assets.xcassets in Resources */,
 				D93B1AAE2B038F0F0068BE93 /* Assets.xcassets in Resources */,
+				D94775262B0C1D0B002F1E37 /* walking2.gif in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -257,8 +336,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D94775032B0613F0002F1E37 /* CircleView.swift in Sources */,
+				D93B1AD82B04C9070068BE93 /* Extensions.swift in Sources */,
 				D93B1AAC2B038F0D0068BE93 /* ContentView.swift in Sources */,
+				D9A34F372B0D079A0004B5EE /* Step.swift in Sources */,
+				D94775102B07B069002F1E37 /* FooterView.swift in Sources */,
+				D94775152B08E982002F1E37 /* NavBarView.swift in Sources */,
+				D947751E2B0C1659002F1E37 /* GifView.swift in Sources */,
+				D9F6D5512B0CF98500E06871 /* HealthStore.swift in Sources */,
+				D93B1AD62B04BEE80068BE93 /* ActivityView.swift in Sources */,
 				D93B1AAA2B038F0D0068BE93 /* FitnessApp.swift in Sources */,
+				D93B1AD42B03CB630068BE93 /* SummaryView.swift in Sources */,
+				D94775092B06336A002F1E37 /* GraphView.swift in Sources */,
+				D947750B2B06D281002F1E37 /* ActivityViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -419,12 +509,15 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Fitness/Fitness.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Fitness/Preview Content\"";
 				DEVELOPMENT_TEAM = ADA3W5SAF7;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHealthShareUsageDescription = "This app requires permission to work correvtly.";
+				INFOPLIST_KEY_NSHealthUpdateUsageDescription = "This app requires permission to work correvtly.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -448,12 +541,15 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Fitness/Fitness.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Fitness/Preview Content\"";
 				DEVELOPMENT_TEAM = ADA3W5SAF7;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHealthShareUsageDescription = "This app requires permission to work correvtly.";
+				INFOPLIST_KEY_NSHealthUpdateUsageDescription = "This app requires permission to work correvtly.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -588,6 +684,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		D94775112B08E8D4002F1E37 /* XCRemoteSwiftPackageReference "chartview" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/apppear/chartview.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.5.5;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		D94775122B08E8D4002F1E37 /* SwiftUICharts */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D94775112B08E8D4002F1E37 /* XCRemoteSwiftPackageReference "chartview" */;
+			productName = SwiftUICharts;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = D93B1A9E2B038F0D0068BE93 /* Project object */;
 }

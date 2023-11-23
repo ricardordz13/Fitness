@@ -11,7 +11,29 @@ import SwiftUI
 struct FitnessApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            TabView {
+                SummaryView2(
+                    progress: 27,
+                    goal: 150
+                    //pasos: 1209,
+                    //distancia: 0.77
+                )
+                    .tabItem {
+                        Image(systemName: "circle.circle")
+                        Text("Summary")
+                    }
+                ContentView()
+                    .tabItem {
+                        Image(systemName: "figure.run.circle.fill")
+                        Text("Fitness+")
+                    }
+                ContentView()
+                    .tabItem {
+                        Image(systemName: "person.2.fill")
+                        Text("Sharing")
+                    }
+            }.accentColor(Color.barGreen)
+                .toolbarColorScheme(.dark, for: .tabBar)
         }
     }
 }
