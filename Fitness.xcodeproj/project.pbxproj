@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D905D3EA2B10958F00478E2E /* walking2.gif in Resources */ = {isa = PBXBuildFile; fileRef = D905D3E92B10958F00478E2E /* walking2.gif */; };
 		D93B1AAA2B038F0D0068BE93 /* FitnessApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D93B1AA92B038F0D0068BE93 /* FitnessApp.swift */; };
 		D93B1AAC2B038F0D0068BE93 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D93B1AAB2B038F0D0068BE93 /* ContentView.swift */; };
 		D93B1AAE2B038F0F0068BE93 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D93B1AAD2B038F0F0068BE93 /* Assets.xcassets */; };
@@ -24,7 +25,6 @@
 		D94775132B08E8D4002F1E37 /* SwiftUICharts in Frameworks */ = {isa = PBXBuildFile; productRef = D94775122B08E8D4002F1E37 /* SwiftUICharts */; };
 		D94775152B08E982002F1E37 /* NavBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D94775142B08E982002F1E37 /* NavBarView.swift */; };
 		D947751E2B0C1659002F1E37 /* GifView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D947751D2B0C1659002F1E37 /* GifView.swift */; };
-		D94775262B0C1D0B002F1E37 /* walking2.gif in Resources */ = {isa = PBXBuildFile; fileRef = D94775252B0C1D0B002F1E37 /* walking2.gif */; };
 		D9A34F372B0D079A0004B5EE /* Step.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9A34F362B0D079A0004B5EE /* Step.swift */; };
 		D9F6D5512B0CF98500E06871 /* HealthStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9F6D5502B0CF98500E06871 /* HealthStore.swift */; };
 /* End PBXBuildFile section */
@@ -47,6 +47,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D905D3E92B10958F00478E2E /* walking2.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = walking2.gif; path = ../../../../../Downloads/walking2.gif; sourceTree = "<group>"; };
 		D93B1AA62B038F0D0068BE93 /* Fitness.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Fitness.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D93B1AA92B038F0D0068BE93 /* FitnessApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FitnessApp.swift; sourceTree = "<group>"; };
 		D93B1AAB2B038F0D0068BE93 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -66,7 +67,6 @@
 		D947750F2B07B069002F1E37 /* FooterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FooterView.swift; sourceTree = "<group>"; };
 		D94775142B08E982002F1E37 /* NavBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavBarView.swift; sourceTree = "<group>"; };
 		D947751D2B0C1659002F1E37 /* GifView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GifView.swift; sourceTree = "<group>"; };
-		D94775252B0C1D0B002F1E37 /* walking2.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = walking2.gif; path = ../../../../Downloads/walking2.gif; sourceTree = "<group>"; };
 		D9A34F342B0CFD160004B5EE /* Fitness.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Fitness.entitlements; sourceTree = "<group>"; };
 		D9A34F362B0D079A0004B5EE /* Step.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Step.swift; sourceTree = "<group>"; };
 		D9F6D5502B0CF98500E06871 /* HealthStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthStore.swift; sourceTree = "<group>"; };
@@ -178,7 +178,7 @@
 			children = (
 				D93B1AD32B03CB630068BE93 /* SummaryView.swift */,
 				D947751D2B0C1659002F1E37 /* GifView.swift */,
-				D94775252B0C1D0B002F1E37 /* walking2.gif */,
+				D905D3E92B10958F00478E2E /* walking2.gif */,
 			);
 			path = Summary;
 			sourceTree = "<group>";
@@ -311,7 +311,7 @@
 			files = (
 				D93B1AB12B038F0F0068BE93 /* Preview Assets.xcassets in Resources */,
 				D93B1AAE2B038F0F0068BE93 /* Assets.xcassets in Resources */,
-				D94775262B0C1D0B002F1E37 /* walking2.gif in Resources */,
+				D905D3EA2B10958F00478E2E /* walking2.gif in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
